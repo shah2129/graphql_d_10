@@ -15,11 +15,11 @@ const books = [
 ];
 
 // Type definitions define the "shape" of your data and specify
-// which ways the data can be fetched from the GraphQL server.
+// which ways the data can be fetched from the GraphQL server..
 const typeDefs = gql`
   # Comments in GraphQL are defined with the hash (#) symbol.
 
-  # This "Book" type can be used in other type declarations.
+  # This "Book" type can be used in other type declarations. 
   type Book {
     title: String
     author: String
@@ -40,7 +40,7 @@ const resolvers = {
   },
 };
 
-// In the most basic sense, the ApolloServer can be started
+// In the most basic sense, the ApolloServer can be started 
 // by passing type definitions (typeDefs) and the resolvers
 // responsible for fetching the data for those types.
 const server = new ApolloServer({ typeDefs, resolvers });
